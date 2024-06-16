@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=600 height=900 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=432 height=700 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -59,9 +59,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/OneShotOrbit.loader.js";
       var config = {
-        dataUrl: buildUrl + "/OneShotOrbit.data",
-        frameworkUrl: buildUrl + "/OneShotOrbit.framework.js",
-        codeUrl: buildUrl + "/OneShotOrbit.wasm",
+        dataUrl: buildUrl + "/OneShotOrbit.data.br",
+        frameworkUrl: buildUrl + "/OneShotOrbit.framework.js.br",
+        codeUrl: buildUrl + "/OneShotOrbit.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "1HP Games",
         productName: "OneShotOrbit",
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "600px";
-        canvas.style.height = "900px";
+        canvas.style.width = "432px";
+        canvas.style.height = "700px";
       }
 
       loadingBar.style.display = "block";
